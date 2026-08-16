@@ -1,0 +1,139 @@
+[56] [17/11/17 21:31:36] INFO BaseStep: ------------------initilizing----------------
+[72] [17/11/17 21:31:37] INFO SmokeTest: Property File Initialized
+[102] [17/11/17 21:31:37] INFO SmokeTest: Extended Cucumber Report Setup Done
+[103] [17/11/17 21:31:37] INFO SmokeTest: breakPoint Desktop
+[200] [17/11/17 21:31:37] INFO BaseStep: Starting Chrome Browser
+[233] [17/11/17 21:31:43] INFO BaseStep: Started with chrome Browser
+[107] [17/11/17 21:31:59] INFO AccountActivationTestSteps: User is on Home screen
+[25] [17/11/17 21:32:00] INFO AccountActivationTestSteps: User successfully clicked on Sign Up button
+[112] [17/11/17 21:32:01] INFO AccountActivationTestSteps: User is on Sign Up for a New Account screen
+[112] [17/11/17 21:32:02] INFO AccountActivationTestSteps: User is on Sign Up for a New Account screen
+[481] [17/11/17 21:32:04] INFO AccountActivationTestSteps: I have an activation code and ready to create my account. is Validated
+[481] [17/11/17 21:32:04] INFO AccountActivationTestSteps: I need an activation code so I can create my account. is Validated
+[481] [17/11/17 21:32:04] INFO AccountActivationTestSteps: Activate My Account is Validated
+[481] [17/11/17 21:32:05] INFO AccountActivationTestSteps: Request Activation Code is Validated
+[481] [17/11/17 21:32:05] INFO AccountActivationTestSteps: CONTINUE SIGN UP is Validated
+[481] [17/11/17 21:32:05] INFO AccountActivationTestSteps: REQUEST ACTIVATION CODE is Validated
+[481] [17/11/17 21:32:05] INFO AccountActivationTestSteps: What is an activation code? is Validated
+[481] [17/11/17 21:32:05] INFO AccountActivationTestSteps: Need Help? is Validated
+[246] [17/11/17 21:32:05] INFO AccountActivationTestSteps: All the text on Sign Up for new account Page are validated
+[112] [17/11/17 21:32:06] INFO AccountActivationTestSteps: User is on Sign Up for a New Account screen
+[559] [17/11/17 21:32:06] INFO AccountActivationTestSteps: User clicked on link- What is an activation code?
+[481] [17/11/17 21:32:07] INFO AccountActivationTestSteps: test2 Portal activation code is a unique code created for each individual to activate their account. It consists of a combination of characters and numbers separated by hyphens. This code is essential in order to activate your product. Example ABCD-EF123-GH4TF is Validated
+[576] [17/11/17 21:32:07] INFO AccountActivationTestSteps: pop up text is verified
+[112] [17/11/17 21:32:08] INFO AccountActivationTestSteps: User is on Sign Up for a New Account screen
+[32] [17/11/17 21:32:08] INFO AccountActivationTestSteps: User successfully clicked on CONTINUE SIGN UP button
+[117] [17/11/17 21:32:09] INFO AccountActivationTestSteps: User is on Activation Code screen
+[117] [17/11/17 21:32:10] INFO AccountActivationTestSteps: User is on Activation Code screen
+[250] [17/11/17 21:32:10] INFO AccountActivationTestSteps: Page not found
+[298] [17/11/17 21:32:10] INFO AccountActivationTestSteps: GET STARTED is a button
+[298] [17/11/17 21:32:10] INFO AccountActivationTestSteps: CANCEL is a button
+[328] [17/11/17 21:32:12] INFO AccountActivationTestSteps: Request one now is a link
+[117] [17/11/17 21:32:13] INFO AccountActivationTestSteps: User is on Activation Code screen
+[37] [17/11/17 21:32:13] INFO AccountActivationTestSteps: User successfully clicked on GET STARTED button
+[122] [17/11/17 21:32:14] INFO AccountActivationTestSteps: User is on Activation Code screen
+[151] [17/11/17 21:32:14] INFO AccountActivationTestSteps: User not on Terms and conditions screen
+[348] [17/11/17 21:32:15] INFO AccountActivationTestSteps: User checked on the checkBox
+[481] [17/11/17 21:32:17] INFO AccountActivationTestSteps: Please review the Terms and Conditions, you must accept to continue. is Validated
+[151] [17/11/17 21:32:17] INFO AccountActivationTestSteps: User not on Terms and conditions screen
+[357] [17/11/17 21:32:18] INFO AccountActivationTestSteps: checkBox is unchecked
+[42] [17/11/17 21:32:18] INFO AccountActivationTestSteps: User successfully clicked on NEXT STEP button
+[350] [17/11/17 21:32:20] INFO BaseStep: Screen Shot taken
+[151] [17/11/17 21:32:20] INFO AccountActivationTestSteps: User not on Terms and conditions screen
+[348] [17/11/17 21:32:22] INFO AccountActivationTestSteps: User checked on the checkBox
+[42] [17/11/17 21:32:22] INFO AccountActivationTestSteps: User successfully clicked on NEXT STEP button
+[127] [17/11/17 21:32:23] INFO AccountActivationTestSteps: User is on Activation Code screen
+[481] [17/11/17 21:32:26] INFO AccountActivationTestSteps: Enter one-time use Activation Code you received. is Validated
+[481] [17/11/17 21:32:26] INFO AccountActivationTestSteps: 15 Digit Activation Code is Validated
+[481] [17/11/17 21:32:26] INFO AccountActivationTestSteps: Don't have an Activation Code? You can request one. is Validated
+[481] [17/11/17 21:32:26] INFO AccountActivationTestSteps: NEXT STEP is Validated
+[481] [17/11/17 21:32:26] INFO AccountActivationTestSteps: CANCEL is Validated
+[178] [17/11/17 21:32:26] INFO AccountActivationTestSteps: All the text on Activation Code Page are validated
+[328] [17/11/17 21:32:27] INFO AccountActivationTestSteps: request one is a link
+[298] [17/11/17 21:32:27] INFO AccountActivationTestSteps: NEXT STEP is a button
+[298] [17/11/17 21:32:27] INFO AccountActivationTestSteps: CANCEL is a button
+[127] [17/11/17 21:32:28] INFO AccountActivationTestSteps: User is on Activation Code screen
+[566] [17/11/17 21:32:31] INFO AccountActivationTestSteps: NEXT STEP is enabled
+[42] [17/11/17 21:32:31] INFO AccountActivationTestSteps: User successfully clicked on NEXT STEP button
+[132] [17/11/17 21:32:33] INFO AccountActivationTestSteps: User is on Personal Information screen
+[132] [17/11/17 21:32:34] INFO AccountActivationTestSteps: User is on Personal Information screen
+[481] [17/11/17 21:32:36] INFO AccountActivationTestSteps: To create your test2 account and provide access to your personal health information, we need to verify your identity. is Validated
+[481] [17/11/17 21:32:36] INFO AccountActivationTestSteps: First Name is Validated
+[481] [17/11/17 21:32:36] INFO AccountActivationTestSteps: Last Name is Validated
+[481] [17/11/17 21:32:36] INFO AccountActivationTestSteps: Date of Birth is Validated
+[481] [17/11/17 21:32:36] INFO AccountActivationTestSteps: Email Address is Validated
+[481] [17/11/17 21:32:36] INFO AccountActivationTestSteps: Confirm Email Address is Validated
+[481] [17/11/17 21:32:36] INFO AccountActivationTestSteps: Last 4 of Social Security # is Validated
+[481] [17/11/17 21:32:37] INFO AccountActivationTestSteps: Why do we need this? is Validated
+[481] [17/11/17 21:32:37] INFO AccountActivationTestSteps: NEXT STEP is Validated
+[481] [17/11/17 21:32:37] INFO AccountActivationTestSteps: CANCEL is Validated
+[194] [17/11/17 21:32:37] INFO AccountActivationTestSteps: All the text on Personal Information Page are validated
+[328] [17/11/17 21:32:38] INFO AccountActivationTestSteps: Why do we need this? is a link
+[298] [17/11/17 21:32:38] INFO AccountActivationTestSteps: NEXT STEP is a button
+[298] [17/11/17 21:32:38] INFO AccountActivationTestSteps: CANCEL is a button
+[132] [17/11/17 21:32:39] INFO AccountActivationTestSteps: User is on Personal Information screen
+[559] [17/11/17 21:32:39] INFO AccountActivationTestSteps: User clicked on link- Why do we need this?
+[504] [17/11/17 21:32:41] INFO AccountActivationTestSteps: To create your test2 account and provide access to your personal health information, we need to verify your identity. is Validated
+[132] [17/11/17 21:32:43] INFO AccountActivationTestSteps: User is on Personal Information screen
+[441] [17/11/17 21:32:45] INFO AccountActivationTestSteps: FNAME successfully entered in the field First Name
+[441] [17/11/17 21:32:48] INFO AccountActivationTestSteps: LNAME successfully entered in the field Last Name
+[441] [17/11/17 21:32:55] INFO AccountActivationTestSteps: 01/01/2000 successfully entered in the field Date of Birth
+[441] [17/11/17 21:32:57] INFO AccountActivationTestSteps: abc@gmail.com successfully entered in the field Email Address
+[441] [17/11/17 21:33:00] INFO AccountActivationTestSteps: abc@gmail.com successfully entered in the field Confirm Email Address
+[441] [17/11/17 21:33:02] INFO AccountActivationTestSteps: 1234 successfully entered in the field Last 4 of Social Security
+[566] [17/11/17 21:33:02] INFO AccountActivationTestSteps: NEXT STEP is enabled
+[42] [17/11/17 21:33:03] INFO AccountActivationTestSteps: User successfully clicked on NEXT STEP button
+[137] [17/11/17 21:33:04] INFO AccountActivationTestSteps: User is on Username & Password screen
+[137] [17/11/17 21:33:05] INFO AccountActivationTestSteps: User is on Username & Password screen
+[481] [17/11/17 21:33:07] INFO AccountActivationTestSteps: Create your Username & Password is Validated
+[481] [17/11/17 21:33:07] INFO AccountActivationTestSteps: Create your username, password and security info. is Validated
+[481] [17/11/17 21:33:07] INFO AccountActivationTestSteps: Username is Validated
+[481] [17/11/17 21:33:08] INFO AccountActivationTestSteps: Password is Validated
+[481] [17/11/17 21:33:08] INFO AccountActivationTestSteps: Confirm Password is Validated
+[481] [17/11/17 21:33:08] INFO AccountActivationTestSteps: NEXT STEP is Validated
+[481] [17/11/17 21:33:08] INFO AccountActivationTestSteps: CANCEL is Validated
+[481] [17/11/17 21:33:08] INFO AccountActivationTestSteps: Password Strength: is Validated
+[481] [17/11/17 21:33:08] INFO AccountActivationTestSteps: Weak is Validated
+[481] [17/11/17 21:33:08] INFO AccountActivationTestSteps: Medium is Validated
+[481] [17/11/17 21:33:08] INFO AccountActivationTestSteps: Strong (Recommended) is Validated
+[211] [17/11/17 21:33:08] INFO AccountActivationTestSteps: All the text on Username & Password Page are validated
+[350] [17/11/17 21:33:11] INFO BaseStep: Screen Shot taken
+[137] [17/11/17 21:33:12] INFO AccountActivationTestSteps: User is on Username & Password screen
+[441] [17/11/17 21:33:15] INFO AccountActivationTestSteps: uname successfully entered in the field Username
+[441] [17/11/17 21:33:17] INFO AccountActivationTestSteps: a@!B1cdQWs2 successfully entered in the field Password
+[483] [17/11/17 21:33:18] INFO AccountActivationTestSteps: Password is unmasked
+[441] [17/11/17 21:33:20] INFO AccountActivationTestSteps: a@!B1cdQWs2 successfully entered in the field Confirm Password
+[566] [17/11/17 21:33:20] INFO AccountActivationTestSteps: NEXT STEP is enabled
+[42] [17/11/17 21:33:20] INFO AccountActivationTestSteps: User successfully clicked on NEXT STEP button
+[142] [17/11/17 21:33:22] INFO AccountActivationTestSteps: User is on Security Questions screen
+[142] [17/11/17 21:33:23] INFO AccountActivationTestSteps: User is on Security Questions screen
+[481] [17/11/17 21:33:25] INFO AccountActivationTestSteps: What was the last name of your first grade teacher?
+Show Question is Validated
+[481] [17/11/17 21:33:25] INFO AccountActivationTestSteps: What was the model of your first car?
+Show Question is Validated
+[481] [17/11/17 21:33:25] INFO AccountActivationTestSteps: Who was your childhood hero?
+Show Question is Validated
+[481] [17/11/17 21:33:25] INFO AccountActivationTestSteps: What was your home street name when you were in second grade?
+Show Question is Validated
+[481] [17/11/17 21:33:25] INFO AccountActivationTestSteps: What was the last name of your third grade teacher?
+Show Question is Validated
+[220] [17/11/17 21:33:25] INFO AccountActivationTestSteps: All the text on Security Questions Page are validated
+[142] [17/11/17 21:33:26] INFO AccountActivationTestSteps: User is on Security Questions screen
+[54] [17/11/17 21:33:27] INFO AccountActivationTestSteps: User successfully clicked on Question1 button
+[96] [17/11/17 21:33:29] INFO AccountActivationTestSteps: User entered Answer for Question1
+[60] [17/11/17 21:33:29] INFO AccountActivationTestSteps: User successfully clicked on Question2 button
+[96] [17/11/17 21:33:32] INFO AccountActivationTestSteps: User entered Answer for Question2
+[67] [17/11/17 21:33:32] INFO AccountActivationTestSteps: User successfully clicked on Question3 button
+[96] [17/11/17 21:33:35] INFO AccountActivationTestSteps: User entered Answer for Question3
+[48] [17/11/17 21:33:35] INFO AccountActivationTestSteps: User successfully clicked on FINISH button
+[147] [17/11/17 21:33:36] INFO AccountActivationTestSteps: User is on Activation Success screen
+[147] [17/11/17 21:33:37] INFO AccountActivationTestSteps: User is on Activation Success screen
+[481] [17/11/17 21:33:39] INFO AccountActivationTestSteps: Success! Your account setup is now complete! is Validated
+[481] [17/11/17 21:33:39] INFO AccountActivationTestSteps: LOGIN TO YOUR ACCOUNT is Validated
+[481] [17/11/17 21:33:39] INFO AccountActivationTestSteps: No thanks, I�m Done is Validated
+[230] [17/11/17 21:33:39] INFO AccountActivationTestSteps: All the text on Activation Success Page are validated
+[298] [17/11/17 21:33:39] INFO AccountActivationTestSteps: LOGIN TO YOUR ACCOUNT is a button
+[325] [17/11/17 21:33:39] INFO AccountActivationTestSteps: Not a Link
+[328] [17/11/17 21:33:39] INFO AccountActivationTestSteps: No thanks, I�m Done is a link
+[364] [17/11/17 21:33:42] INFO BaseStep: Application Closed
+[158] [17/11/17 21:33:42] INFO SmokeTest: Driver initialization is not done properly skipping jira updation

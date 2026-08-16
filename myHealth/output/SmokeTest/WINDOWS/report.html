@@ -1,0 +1,2308 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/6d3843c29c354373fafad29c03a1a89b7e06c374/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+</head>
+
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Nov 17, 2017 09:31:58 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>v3.0.6</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@CA-2778</a></li>
+					<li><a href='#'>@websmokeTest</a></li>
+					<li><a href='#'>@CA-1541</a></li>
+					<li><a href='#'>@CA-2882</a></li>
+					<li><a href='#'>@CA-2779</a></li>
+					<li><a href='#'>@CA-2780</a></li>
+					<li><a href='#'>@CA-2781</a></li>
+					<li><a href='#'>@CA-2782</a></li>
+					<li><a href='#'>@CA-2783</a></li>
+					<li><a href='#'>@CA-2887</a></li>
+					<li><a href='#'>@CA-2784</a></li>
+					<li><a href='#'>@CA-2785</a></li>
+					<li><a href='#'>@CA-2786</a></li>
+					<li><a href='#'>@CA-2787</a></li>
+					<li><a href='#'>@CA-2788</a></li>
+					<li><a href='#'>@CA-2789</a></li>
+					<li><a href='#'>@CA-2793</a></li>
+					<li><a href='#'>@CA-2794</a></li>
+					<li><a href='#'>@CA-2795</a></li>
+					<li><a href='#'>@CA-2796</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Features</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Scenarios</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='89.474%'><span class='strong'>17</span> scenario(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='10.526%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='97.619%'><span class='strong'>82</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='2.381%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Features</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Patient Login feature</span>
+						<span class='test-time'>Nov 17, 2017 09:31:58 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='2' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2778</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 3s+170ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_01-Verify whether the user is navigated to "Sign Up for a new Account" page when tapped on "Sign Up" button from Home page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Home" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='4' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "Sign Up" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='5' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be navigated to "Sign Up for a New Account" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='6' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-1541</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+142ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_06-Verify whether the user is able to see the texts present on "Sign Up for a new Account" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='7' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Sign Up for a New Account" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below texts on "Sign Up for a new Account" page</span>
+				<div class='pre'><table><tr><td>Activate My Account</td></tr><tr><td>I have an activation code and ready to create my account.</td></tr><tr><td>CONTINUE SIGN UP</td></tr><tr><td>Request Activation Code</td></tr><tr><td>I need an activation code so I can create my account.</td></tr><tr><td>REQUEST ACTIVATION CODE</td></tr><tr><td>What is an activation code?</td></tr><tr><td>Need Help?</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='9' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2882</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 1s+533ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_06-Verify whether the user is able to see a pop-up when tapped on "What is an activation code?" link from "Sign Up for a new account" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='10' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Sign Up for a New Account" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "What is an activation code?" link</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='12' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should see pop-up with description "test2 Portal activation code is a unique code created for each individual to activate their account. It consists of a combination of characters and numbers separated by hyphens. This code is essential in order to activate your product. Example ABCD-EF123-GH4TF"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='13' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2779</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 2s+441ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_06-Verify whether the user is able to see "Welcome to Activation Setup!" page when tapped on "Continue Sign Up" button from "Sign Up for a New Account" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='14' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Sign Up for a New Account" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "CONTINUE SIGN UP" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='16' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be navigated to "Welcome to Activation Setup!" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='17' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2780</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 2s+406ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_07-Verify whether the user is able to see the contents of "Welcome to Activation Setup!" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='18' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Welcome to Activation Setup!" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='19' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below texts on "Welcome to Activation Setup!" page</span>
+				<div class='pre'><table><tr><td>We�ll take you through 5 steps to activate your account. You will need your activation code in order to activate your account.</td></tr><tr><td>Need an activation code? Request one now</td></tr><tr><td>GET STARTED</td></tr><tr><td>CANCEL</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='20' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below buttons</span>
+				<div class='pre'><table><tr><td>GET STARTED</td></tr><tr><td>CANCEL</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='21' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below links</span>
+				<div class='pre'><table><tr><td>Request one now</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='22' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2781</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 2s+516ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_10-Verify whether the user is navigated to "Terms and Conditions" page when tapped on "Get Started" button from "Welcome to Activation Setup" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='23' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Welcome to Activation Setup!" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "GET STARTED" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='25' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be navigated to "Terms and Conditions" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='26' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2782</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 2s+585ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_12-Verify whether the user is able to see error message when checked on the checkbox without scrolling down till the complete "Terms & Conditions" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='27' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Terms and conditions" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='28' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User has NOT scrolled down till the complete Terms & Conditions</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='29' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Checks on the checkbox</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='30' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should see an error as "Please review the Terms and Conditions, you must accept to continue." when not scrolled down</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='31' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2783</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 2s+556ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_13-Verify whether the user is able to see an error message when tapped on "NEXT STEP" button without checking on the checkbox</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='32' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Terms and conditions" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='33' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the checkbox as unchecked</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='34' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "NEXT STEP" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='35' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should see an error as "You must agree to the terms and conditions before you can enroll."</span>
+				<div class='pre'><pre>java.lang.AssertionError: expected [You must agree to the terms and conditions before you can enroll.] but found [Please review the Terms and Conditions, you must accept to continue.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.test.test2.Utilities.CommonUtilities.text_Assert(CommonUtilities.java:483)
+	at com.test.test2.StepLibrary.AccountActivationTestStepLibrary.ErrorField(AccountActivationTestStepLibrary.java:364)
+	at com.test.test2.StepDefinition.AccountActivationTestSteps.userShouldSeeAnErrorAs(AccountActivationTestSteps.java:89)
+	at ?.Then User should see an error as "You must agree to the terms and conditions before you can enroll."(web/SmokeTest_AccountActivation.feature:69)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='36' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2887</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 2s+66ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_15-Verify whether the user is able to navigate to "Activate Code" page without any error upon tapping on "NEXT STEP" button</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='37' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Terms and conditions" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='38' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User scrolls down till the end of Terms & Conditions</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='39' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Checks on the checkbox</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='40' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "NEXT STEP" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='41' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be navigated to "Activation Code"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='42' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2784</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+962ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_16-Verify whether the user is able to see the contents of "Activation Code" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='43' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Activation Code" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='44' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below texts on "Activation Code" page</span>
+				<div class='pre'><table><tr><td>Enter one-time use Activation Code you received.</td></tr><tr><td>15 Digit Activation Code</td></tr><tr><td>Don't have an Activation Code? You can request one.</td></tr><tr><td>NEXT STEP</td></tr><tr><td>CANCEL</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='45' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below links</span>
+				<div class='pre'><table><tr><td>request one</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='46' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below buttons</span>
+				<div class='pre'><table><tr><td>NEXT STEP</td></tr><tr><td>CANCEL</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='47' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2785</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+424ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_22-Verify whether the user is able to navigate to "Personal Information" screen after entering a valid Activation Code and tapping on "NEXT STEP" button</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='48' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Activation Code" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='49' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters "111112222233333" activation code</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='50' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should see "NEXT STEP" button enabled</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='51' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "NEXT STEP" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='52' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be navigated to "Personal Information" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='53' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2786</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+282ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_23-Verify whether the user is able to see the contents of "Personal Information" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='54' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Personal Information" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='55' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below texts on "Personal Information" page</span>
+				<div class='pre'><table><tr><td>To create your test2 account and provide access to your personal health information, we need to verify your identity.</td></tr><tr><td>First Name</td></tr><tr><td>Last Name</td></tr><tr><td>Date of Birth</td></tr><tr><td>Email Address</td></tr><tr><td>Confirm Email Address</td></tr><tr><td>Last 4 of Social Security #</td></tr><tr><td>Why do we need this?</td></tr><tr><td>NEXT STEP</td></tr><tr><td>CANCEL</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='56' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below links</span>
+				<div class='pre'><table><tr><td>Why do we need this?</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='57' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below buttons</span>
+				<div class='pre'><table><tr><td>NEXT STEP</td></tr><tr><td>CANCEL</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='58' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2787</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 3s+763ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_24-Verify whether the user is able to see the tooltip when tapped on the link- "Why do we need this?"</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='59' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Personal Information" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='60' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "Why do we need this?" link</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='61' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should see a tooltip with verbiage- "To create your test2 account and provide access to your personal health information, we need to verify your identity."</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='62' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2788</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 22s+95ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_35-Verify whether user is navigated to "Username & Password" screen after entering valid data and tapping on "NEXT STEP" button</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='63' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Personal Information" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='64' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters "FNAME" in "First Name" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='65' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "LNAME" in "Last Name" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='66' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "01/01/2000" in "Date of Birth" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='67' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "abc@gmail.com" in "Email Address" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='68' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "abc@gmail.com" in "Confirm Email Address" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='69' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "1234" in "Last 4 of Social Security" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='70' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should see "NEXT STEP" button enabled</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='71' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "NEXT STEP" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='72' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be navigated to "Username & Password" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='73' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2789</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 6s+756ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_36-Verify whether the user is able to see the contents of "Username & Password" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='74' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Username & Password" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='75' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below texts on "Username & Password" page</span>
+				<div class='pre'><table><tr><td>Create your Username & Password</td></tr><tr><td>Create your username, password and security info.</td></tr><tr><td>Username</td></tr><tr><td>Password</td></tr><tr><td>Confirm Password</td></tr><tr><td>NEXT STEP</td></tr><tr><td>CANCEL</td></tr><tr><td>Password Strength:</td></tr><tr><td>Weak</td></tr><tr><td>Medium</td></tr><tr><td>Strong (Recommended)</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='76' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the help text</span>
+				<div class='pre'><table><tr><td>Username</td></tr><tr><td>5 - 20 characters in length</td></tr><tr><td>Must begin with a letter</td></tr><tr><td>Valid: letters (a-z), numbers (0-9) and underscore (_)</td></tr><tr><td>Password</td></tr><tr><td>8 - 64 characters in length</td></tr><tr><td>Cannot be a common term</td></tr><tr><td>Cannot be same as Login ID</td></tr></table></div>
+				<div class='pre'><pre>java.lang.AssertionError: expected [5 - 20 characters in length] but found [5-20 characters length]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.test.test2.Utilities.CommonUtilities.text_Assert(CommonUtilities.java:483)
+	at com.test.test2.StepLibrary.AccountActivationTestStepLibrary.HelpTextValidation(AccountActivationTestStepLibrary.java:259)
+	at com.test.test2.StepDefinition.AccountActivationTestSteps.User_should_see_the_help_text(AccountActivationTestSteps.java:38)
+	at ?.And User should see the help text(web/SmokeTest_AccountActivation.feature:157)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='77' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2793</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 10s+271ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_50-Verify whether user is navigated to "Security Questions" screen after entering valid data and tapping on "NEXT STEP" button</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='78' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Username & Password" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='79' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters "uname" in "Username" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='80' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "a@!B1cdQWs2" in "Password" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='81' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User taps on show icon in "Password" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='82' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should see unmasked value in "Password" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='83' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters "a@!B1cdQWs2" in "Confirm Password" field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='84' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see "NEXT STEP" button enabled</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='85' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "NEXT STEP" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='86' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be navigated to "Security Questions" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='87' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2794</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 3s+516ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_51-Verify whether the user is able to see the contents of "Security Questions" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='88' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Security Questions" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='89' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below texts on "Security Questions" page</span>
+				<div class='pre'><table><tr><td>What was the last name of your first grade teacher?</td></tr><tr><td>What was the model of your first car?</td></tr><tr><td>Who was your childhood hero?</td></tr><tr><td>What was your home street name when you were in second grade?</td></tr><tr><td>What was the last name of your third grade teacher?</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='90' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2795</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 10s+850ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_58-Verify whether user is navigated to "Activation Success" screen after entering valid data and tapping on "COMPLETE YOUR ACCOUNT" button</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='91' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Security Questions" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='92' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "Question1" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='93' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "Answer1" for "Question1"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='94' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "Question2" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='95' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "Answer2" for "Question2"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='96' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "Question3" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='97' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "Answer3" for "Question3"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='98' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User taps on "FINISH" button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='99' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be navigated to "Activation Success" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='100' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@CA-2796</span>
+		<span class='category label white-text'>@websmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 3s+500ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">ACT_TC_59-Verify whether the user is able to see the contents of "Activation Success" page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='101' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on "Activation Success" page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='102' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below texts on "Activation Success" page</span>
+				<div class='pre'><table><tr><td>Success! Your account setup is now complete!</td></tr><tr><td>LOGIN TO YOUR ACCOUNT</td></tr><tr><td>No thanks, I�m Done</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='103' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below buttons</span>
+				<div class='pre'><table><tr><td>LOGIN TO YOUR ACCOUNT</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='104' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should see the below links</span>
+				<div class='pre'><table><tr><td>No thanks, I�m Done</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2778</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:31:58 PM</td>
+										<td class='linked' test-id='2'>Patient Login feature.ACT_TC_01-Verify whether the user is navigated to "Sign Up for a new Account" page when tapped on "Sign Up" button from Home page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@websmokeTest</span>
+						<span class='category-status right'>
+							<span class='label pass'>17</span>
+							<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 17</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:31:58 PM</td>
+										<td class='linked' test-id='2'>Patient Login feature.ACT_TC_01-Verify whether the user is navigated to "Sign Up for a new Account" page when tapped on "Sign Up" button from Home page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:01 PM</td>
+										<td class='linked' test-id='6'>Patient Login feature.ACT_TC_06-Verify whether the user is able to see the texts present on "Sign Up for a new Account" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:05 PM</td>
+										<td class='linked' test-id='9'>Patient Login feature.ACT_TC_06-Verify whether the user is able to see a pop-up when tapped on "What is an activation code?" link from "Sign Up for a new account" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:07 PM</td>
+										<td class='linked' test-id='13'>Patient Login feature.ACT_TC_06-Verify whether the user is able to see "Welcome to Activation Setup!" page when tapped on "Continue Sign Up" button from "Sign Up for a New Account" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:09 PM</td>
+										<td class='linked' test-id='17'>Patient Login feature.ACT_TC_07-Verify whether the user is able to see the contents of "Welcome to Activation Setup!" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:12 PM</td>
+										<td class='linked' test-id='22'>Patient Login feature.ACT_TC_10-Verify whether the user is navigated to "Terms and Conditions" page when tapped on "Get Started" button from "Welcome to Activation Setup" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:14 PM</td>
+										<td class='linked' test-id='26'>Patient Login feature.ACT_TC_12-Verify whether the user is able to see error message when checked on the checkbox without scrolling down till the complete "Terms & Conditions" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:17 PM</td>
+										<td class='linked' test-id='31'>Patient Login feature.ACT_TC_13-Verify whether the user is able to see an error message when tapped on "NEXT STEP" button without checking on the checkbox</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:20 PM</td>
+										<td class='linked' test-id='36'>Patient Login feature.ACT_TC_15-Verify whether the user is able to navigate to "Activate Code" page without any error upon tapping on "NEXT STEP" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:22 PM</td>
+										<td class='linked' test-id='42'>Patient Login feature.ACT_TC_16-Verify whether the user is able to see the contents of "Activation Code" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:27 PM</td>
+										<td class='linked' test-id='47'>Patient Login feature.ACT_TC_22-Verify whether the user is able to navigate to "Personal Information" screen after entering a valid Activation Code and tapping on "NEXT STEP" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:33 PM</td>
+										<td class='linked' test-id='53'>Patient Login feature.ACT_TC_23-Verify whether the user is able to see the contents of "Personal Information" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:38 PM</td>
+										<td class='linked' test-id='58'>Patient Login feature.ACT_TC_24-Verify whether the user is able to see the tooltip when tapped on the link- "Why do we need this?"</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:32:42 PM</td>
+										<td class='linked' test-id='62'>Patient Login feature.ACT_TC_35-Verify whether user is navigated to "Username & Password" screen after entering valid data and tapping on "NEXT STEP" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:33:04 PM</td>
+										<td class='linked' test-id='73'>Patient Login feature.ACT_TC_36-Verify whether the user is able to see the contents of "Username & Password" page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:33:11 PM</td>
+										<td class='linked' test-id='77'>Patient Login feature.ACT_TC_50-Verify whether user is navigated to "Security Questions" screen after entering valid data and tapping on "NEXT STEP" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:33:22 PM</td>
+										<td class='linked' test-id='87'>Patient Login feature.ACT_TC_51-Verify whether the user is able to see the contents of "Security Questions" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:33:25 PM</td>
+										<td class='linked' test-id='90'>Patient Login feature.ACT_TC_58-Verify whether user is navigated to "Activation Success" screen after entering valid data and tapping on "COMPLETE YOUR ACCOUNT" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 17, 2017 09:33:36 PM</td>
+										<td class='linked' test-id='100'>Patient Login feature.ACT_TC_59-Verify whether the user is able to see the contents of "Activation Success" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-1541</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:01 PM</td>
+										<td class='linked' test-id='6'>Patient Login feature.ACT_TC_06-Verify whether the user is able to see the texts present on "Sign Up for a new Account" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2882</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:05 PM</td>
+										<td class='linked' test-id='9'>Patient Login feature.ACT_TC_06-Verify whether the user is able to see a pop-up when tapped on "What is an activation code?" link from "Sign Up for a new account" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2779</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:07 PM</td>
+										<td class='linked' test-id='13'>Patient Login feature.ACT_TC_06-Verify whether the user is able to see "Welcome to Activation Setup!" page when tapped on "Continue Sign Up" button from "Sign Up for a New Account" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2780</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:09 PM</td>
+										<td class='linked' test-id='17'>Patient Login feature.ACT_TC_07-Verify whether the user is able to see the contents of "Welcome to Activation Setup!" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2781</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:12 PM</td>
+										<td class='linked' test-id='22'>Patient Login feature.ACT_TC_10-Verify whether the user is navigated to "Terms and Conditions" page when tapped on "Get Started" button from "Welcome to Activation Setup" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2782</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:14 PM</td>
+										<td class='linked' test-id='26'>Patient Login feature.ACT_TC_12-Verify whether the user is able to see error message when checked on the checkbox without scrolling down till the complete "Terms & Conditions" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2783</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:17 PM</td>
+										<td class='linked' test-id='31'>Patient Login feature.ACT_TC_13-Verify whether the user is able to see an error message when tapped on "NEXT STEP" button without checking on the checkbox</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2887</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:20 PM</td>
+										<td class='linked' test-id='36'>Patient Login feature.ACT_TC_15-Verify whether the user is able to navigate to "Activate Code" page without any error upon tapping on "NEXT STEP" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2784</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:22 PM</td>
+										<td class='linked' test-id='42'>Patient Login feature.ACT_TC_16-Verify whether the user is able to see the contents of "Activation Code" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2785</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:27 PM</td>
+										<td class='linked' test-id='47'>Patient Login feature.ACT_TC_22-Verify whether the user is able to navigate to "Personal Information" screen after entering a valid Activation Code and tapping on "NEXT STEP" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2786</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:33 PM</td>
+										<td class='linked' test-id='53'>Patient Login feature.ACT_TC_23-Verify whether the user is able to see the contents of "Personal Information" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2787</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:38 PM</td>
+										<td class='linked' test-id='58'>Patient Login feature.ACT_TC_24-Verify whether the user is able to see the tooltip when tapped on the link- "Why do we need this?"</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2788</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:32:42 PM</td>
+										<td class='linked' test-id='62'>Patient Login feature.ACT_TC_35-Verify whether user is navigated to "Username & Password" screen after entering valid data and tapping on "NEXT STEP" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2789</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:33:04 PM</td>
+										<td class='linked' test-id='73'>Patient Login feature.ACT_TC_36-Verify whether the user is able to see the contents of "Username & Password" page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2793</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:33:11 PM</td>
+										<td class='linked' test-id='77'>Patient Login feature.ACT_TC_50-Verify whether user is navigated to "Security Questions" screen after entering valid data and tapping on "NEXT STEP" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2794</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:33:22 PM</td>
+										<td class='linked' test-id='87'>Patient Login feature.ACT_TC_51-Verify whether the user is able to see the contents of "Security Questions" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2795</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:33:25 PM</td>
+										<td class='linked' test-id='90'>Patient Login feature.ACT_TC_58-Verify whether user is navigated to "Activation Success" screen after entering valid data and tapping on "COMPLETE YOUR ACCOUNT" button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CA-2796</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 17, 2017 09:33:36 PM</td>
+										<td class='linked' test-id='100'>Patient Login feature.ACT_TC_59-Verify whether the user is able to see the contents of "Activation Success" page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Nov 17, 2017 09:32:18 PM</td>
+                                                        <td class='linked' test-id='35'>Patient Login feature.ACT_TC_13-Verify whether the user is able to see an error message when tapped on "NEXT STEP" button without checking on the checkbox.Then User should see an error as "You must agree to the terms and conditions before you can enroll."</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [You must agree to the terms and conditions before you can enroll.] but found [Please review the Terms and Conditions, you must accept to continue.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.test.test2.Utilities.CommonUtilities.text_Assert(CommonUtilities.java:483)
+	at com.test.test2.StepLibrary.AccountActivationTestStepLibrary.ErrorField(AccountActivationTestStepLibrary.java:364)
+	at com.test.test2.StepDefinition.AccountActivationTestSteps.userShouldSeeAnErrorAs(AccountActivationTestSteps.java:89)
+	at ?.Then User should see an error as "You must agree to the terms and conditions before you can enroll."(web/SmokeTest_AccountActivation.feature:69)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 17, 2017 09:33:08 PM</td>
+                                                        <td class='linked' test-id='76'>Patient Login feature.ACT_TC_36-Verify whether the user is able to see the contents of "Username & Password" page.And User should see the help text</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [5 - 20 characters in length] but found [5-20 characters length]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.test.test2.Utilities.CommonUtilities.text_Assert(CommonUtilities.java:483)
+	at com.test.test2.StepLibrary.AccountActivationTestStepLibrary.HelpTextValidation(AccountActivationTestStepLibrary.java:259)
+	at com.test.test2.StepDefinition.AccountActivationTestSteps.User_should_see_the_help_text(AccountActivationTestSteps.java:38)
+	at ?.And User should see the help text(web/SmokeTest_AccountActivation.feature:157)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>1</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>19</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>84</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Nov 17, 2017 09:31:58 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Nov 17, 2017 09:33:40 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>102,344ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>@CA-2778</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@websmokeTest</td>
+							<td>17</td>
+							<td>2</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-1541</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2882</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2779</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2780</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2781</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2782</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2783</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2887</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2784</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2785</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2786</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2787</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2788</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2789</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2793</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2794</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2795</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@CA-2796</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 0,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 1,
+				
+				passChild: 17,
+				failChild: 2,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 2,
+				
+				passGrandChild: 82,
+				failGrandChild: 2,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 2,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/5ed7b0c339b51aa347b44ccaa2e2ff29905b2f9f/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+	</body>
+	
+</html>
