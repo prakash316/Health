@@ -1,12 +1,12 @@
-package com.test.test2.StepLibrary;
+package com.testProject.Sentara.StepLibrary;
 
 import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 
-import com.test.test2.Objects.LoginTestObjects;
-import com.test.test2.Utilities.CommonUtilities;
+import com.testProject.Sentara.Objects.LoginTestObjects;
+import com.testProject.Sentara.Utilities.CommonUtilities;
 
 public class LoginTestStepLibrary extends CommonUtilities {
 

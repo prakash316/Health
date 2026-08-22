@@ -1,4 +1,4 @@
-package com.test.test2.Trigger;
+package com.testProject.Sentara.Trigger;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,10 +19,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.cucumber.listener.Reporter;
-import com.test.test2.Utilities.BaseStep;
-import com.test.test2.Utilities.CucumberJsonDataExtractor;
-import com.test.test2.Utilities.TestCaseMgmtCloud;
-import com.test.test2.Utilities.UpdateStatusToXls;
+import com.testProject.Sentara.Utilities.BaseStep;
+import com.testProject.Sentara.Utilities.CucumberJsonDataExtractor;
+import com.testProject.Sentara.Utilities.TestCaseMgmtCloud;
+import com.testProject.Sentara.Utilities.UpdateStatusToXls;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.Scenario;

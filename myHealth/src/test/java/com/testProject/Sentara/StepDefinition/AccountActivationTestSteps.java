@@ -1,7 +1,7 @@
-package com.test.test2.StepDefinition;
+package com.testProject.Sentara.StepDefinition;
 
 import java.util.List;
-import com.test.test2.StepLibrary.AccountActivationTestStepLibrary;
+import com.testProject.Sentara.StepLibrary.AccountActivationTestStepLibrary;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;

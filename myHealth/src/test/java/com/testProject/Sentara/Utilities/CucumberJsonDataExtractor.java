@@ -1,4 +1,4 @@
-package com.test.test2.Utilities;
+package com.testProject.Sentara.Utilities;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.test.test2.StepLibrary;
+package com.testProject.Sentara.StepLibrary;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 
-import com.test.test2.Objects.AccountActivationObjects;
-import com.test.test2.Utilities.CommonUtilities;
+import com.testProject.Sentara.Objects.AccountActivationObjects;
+import com.testProject.Sentara.Utilities.CommonUtilities;
 
 public class AccountActivationTestStepLibrary extends CommonUtilities {
 

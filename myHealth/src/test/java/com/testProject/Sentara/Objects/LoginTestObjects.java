@@ -1,6 +1,6 @@
-package com.test.test2.Objects;
+package com.testProject.Sentara.Objects;
 
-import com.test.test2.Utilities.BaseStep;
+import com.testProject.Sentara.Utilities.BaseStep;
 
 public class LoginTestObjects extends BaseStep {
 

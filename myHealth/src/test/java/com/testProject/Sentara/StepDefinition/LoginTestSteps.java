@@ -1,8 +1,8 @@
-package com.test.test2.StepDefinition;
+package com.testProject.Sentara.StepDefinition;
 
 import java.util.List;
 
-import com.test.test2.StepLibrary.LoginTestStepLibrary;
+import com.testProject.Sentara.StepLibrary.LoginTestStepLibrary;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

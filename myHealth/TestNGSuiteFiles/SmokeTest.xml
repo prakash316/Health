@@ -3,7 +3,7 @@
 	<test name="Smoke Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.test.test2.Trigger.SmokeTest" />			
+			<class name="Trigger.com.testProject.Sentara.SmokeTest" />
 		</classes>
 	</test>	
 </suite>	

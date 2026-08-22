@@ -1,4 +1,4 @@
-package com.test.test2.Utilities;
+package com.testProject.Sentara.Utilities;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
